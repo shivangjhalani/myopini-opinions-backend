@@ -8,33 +8,26 @@ Users can create predictions with expiry dates and submit opinions (Yes/No) with
 - **Validation:** Express Validator
 - **Testing:** Postman
 
-
 ## Testing
-
 I have hosted the backend APIs at 152.67.8.190:3000 with local mongodb server.
 The test collection is present in `myopini-test-collection.postman_collection.json` and the results are present in `myopini-test-collection.postman_test_run.json`
+
 
 ![alt text](<./imgs/Screenshot From 2025-04-11 11-20-53.png>) ![alt text](<./imgs/Screenshot From 2025-04-11 11-20-46.png>) ![alt text](<./imgs/Screenshot From 2025-04-11 11-20-41.png>) ![alt text](<./imgs/Screenshot From 2025-04-11 11-20-20.png>)
 
 
-Or to run postman on your own: 
-Use the provided Postman collection for testing all endpoints:
-Import the collection from `myopini-test-collection.postman_collection.json` located in project root
+# Running on your own
+### Prerequisites
 
-
-
-## Prerequisites
-
-Before you begin, ensure you have:
 - Node.js (v14 or higher) and npm installed
 - MongoDB Atlas account (or MongoDB installed locally)
 - Postman for API testing
 
-## Installation
+### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/myopini-opinions-backend.git
+git clone https://github.com/shivangjhalani/myopini-opinions-backend.git
 cd myopini-opinions-backend
 ```
 
@@ -43,7 +36,7 @@ cd myopini-opinions-backend
 npm install
 ```
 
-## Configuration
+### Configuration
 
 1. Create a `.env` file in the project root, or copy `.env.example` (Have included mongodb atlas password for convinience purposes)
 ```env
@@ -53,7 +46,7 @@ PORT=3000
 
 2. Update MongoDB connection string in `.env` with your credentials
 
-## Running the Project
+### Running the Project
 
 Development mode with auto-reload:
 ```bash
@@ -173,7 +166,7 @@ GET /api/opinions/:predictionId
 
 Get all opinions for a specific prediction.
 
-## Error Responses
+### Error Responses
 
 The API uses consistent error response formats:
 
