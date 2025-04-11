@@ -1,0 +1,258 @@
+{
+	"id": "1569837b-e8ad-4f65-b160-a9279d7a4434",
+	"name": "myopini-test-collection",
+	"timestamp": "2025-04-11T05:47:43.093Z",
+	"collection_id": "43959635-071c083f-b537-444c-937a-5c0f3a5f7154",
+	"folder_id": 0,
+	"environment_id": "43959635-3b2297f7-8db5-4bfe-9a69-7ab5fe1fc790",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-04-11T05:47:42.467Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4d261a90-7d16-470e-8a12-ed8dc929ee83",
+			"name": "post-prediction-successful",
+			"url": "http://152.67.8.190:3000/api/prediction",
+			"time": 52,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response has correct structure": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has correct structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				52
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response has correct structure": true
+				}
+			]
+		},
+		{
+			"id": "13ab35f7-863d-421d-b188-71d16cd5d61b",
+			"name": "post-prediction-missing-required-category-and-past-expiry-time",
+			"url": "http://152.67.8.190:3000/api/prediction",
+			"time": 26,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				26
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1c7124fa-f2f9-4ea7-a394-7fa559a8c450",
+			"name": "post-prediction-invalid-date",
+			"url": "http://152.67.8.190:3000/api/prediction",
+			"time": 26,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				26
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e3ad0577-7dc0-4522-92da-d3dd51bddc55",
+			"name": "get-active-predictions-array",
+			"url": "http://152.67.8.190:3000/api/predictions/active",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has correct structure": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has correct structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has correct structure": true
+				}
+			]
+		},
+		{
+			"id": "fb68bd69-d7d4-4423-8e4a-0aaf9a7a9c32",
+			"name": "post-opinion-successful",
+			"url": "http://152.67.8.190:3000/api/opinion",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Can submit opinion with saved predictionId": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Can submit opinion with saved predictionId": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Can submit opinion with saved predictionId": true
+				}
+			]
+		},
+		{
+			"id": "32ba074c-4134-4549-a935-5086d5434a8e",
+			"name": "get-expired-predictions-array",
+			"url": "http://152.67.8.190:3000/api/predictions/expired",
+			"time": 24,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				24
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "7acf83d0-b5e8-44ca-bb1c-c68d4e2a8f6f",
+			"name": "get-all-opinions",
+			"url": "http://152.67.8.190:3000/api/opinions",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has correct structure": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has correct structure": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has correct structure": true
+				}
+			]
+		},
+		{
+			"id": "371b83a7-8514-4f63-a539-80cf1d327244",
+			"name": "get-predictionId-opinions",
+			"url": "http://152.67.8.190:3000/api/opinions/13e002c2-b209-4980-bc41-2db97213f379",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				31
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 251,
+	"collection": {
+		"requests": [
+			{
+				"id": "4d261a90-7d16-470e-8a12-ed8dc929ee83",
+				"method": "POST"
+			},
+			{
+				"id": "13ab35f7-863d-421d-b188-71d16cd5d61b",
+				"method": "POST"
+			},
+			{
+				"id": "1c7124fa-f2f9-4ea7-a394-7fa559a8c450",
+				"method": "POST"
+			},
+			{
+				"id": "e3ad0577-7dc0-4522-92da-d3dd51bddc55",
+				"method": "GET"
+			},
+			{
+				"id": "fb68bd69-d7d4-4423-8e4a-0aaf9a7a9c32",
+				"method": "POST"
+			},
+			{
+				"id": "32ba074c-4134-4549-a935-5086d5434a8e",
+				"method": "GET"
+			},
+			{
+				"id": "7acf83d0-b5e8-44ca-bb1c-c68d4e2a8f6f",
+				"method": "GET"
+			},
+			{
+				"id": "371b83a7-8514-4f63-a539-80cf1d327244",
+				"method": "GET"
+			}
+		]
+	}
+}

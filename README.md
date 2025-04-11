@@ -8,12 +8,20 @@ Users can create predictions with expiry dates and submit opinions (Yes/No) with
 - **Validation:** Express Validator
 - **Testing:** Postman
 
-I have hosted the backend APIs at 152.67.8.190:3000
 
 ## Testing
 
+I have hosted the backend APIs at 152.67.8.190:3000 with local mongodb server.
+The test collection is present in `myopini-test-collection.postman_collection.json` and the results are present in `myopini-test-collection.postman_test_run.json`
+
+![alt text](<Screenshot From 2025-04-11 11-20-53.png>) ![alt text](<Screenshot From 2025-04-11 11-20-46.png>) ![alt text](<Screenshot From 2025-04-11 11-20-41.png>) ![alt text](<Screenshot From 2025-04-11 11-20-20.png>)
+
+
+Or to run postman on your own: 
 Use the provided Postman collection for testing all endpoints:
 Import the collection from `myopini-test-collection.postman_collection.json` located in project root
+
+
 
 ## Prerequisites
 
